@@ -1,70 +1,83 @@
-# Krishna Aggarwal — Cybersecurity Portfolio
+# Krishna Aggarwal - Cybersecurity Portfolio
 
-**Class 12 | Sarvodaya Bal Vidyalaya, Ghaziabad**
-**INSPIRE MANAK Awardee 2023 | DST, Government of India**
-
----
+**Class 12 Student**  
+Sarvodaya Bal Vidyalaya, J&K Block Dilshad Garden, Delhi  
+Applicant for B.Tech/B.S. Cybersecurity-related programs
 
 ## About Me
 
-I am Krishna Aggarwal, a Class 12 student with a strong foundation in 
-engineering, programming, and applied science. I am deeply interested 
-in cybersecurity, secure systems, and national digital infrastructure.
+I am Krishna Aggarwal, a Class 12 student with a strong interest in engineering, computing, and cybersecurity. My work so far combines hands-on model building with foundational programming.
 
-I built my first working electromechanical model in Class 9, which was 
-selected for the INSPIRE MANAK Award by the Department of Science & 
-Technology, Government of India — receiving a cash prize of ₹10,000 
-and exhibition at District/State Level under GNCT Delhi Science Branch.
+In Class 10, I designed and built a **Portable Automatic Washing Machine**, which was selected for the **INSPIRE MANAK Award 2023** by the Department of Science & Technology, Government of India. The project received a **₹10,000 award** and was later exhibited at the **District/State Level Science Exhibition** under the Directorate of Education, GNCT Delhi.
 
----
+My long-term goal is to work on **secure systems, cyber defence, and protection of critical digital infrastructure**. I am currently strengthening my fundamentals in **C, C++, computer applications, networking, operating systems, and beginner cryptography**.
 
-## Achievements & Certifications
+## Verified Achievements
 
-| Certificate | Issuing Body | Year |
+| Achievement | Organization | Year |
 |---|---|---|
-| INSPIRE MANAK Award (₹10,000) | DST, Govt. of India | 2023 |
-| District/State Level Science Exhibition | GNCT Delhi, Directorate of Education | 2024 |
+| INSPIRE MANAK Award (₹10,000) | Department of Science & Technology, Govt. of India | 2023 |
+| District/State Level Science Exhibition Participation | Directorate of Education, GNCT Delhi | 2024 |
 | Certificate in C and C++ Programming (Grade A) | ICE Computer Education | 2024 |
-| DCAP (Diploma in Computer Applications) — Pursuing | IICS Gokulpuri | 2025-26 |
-| EMC 2025 Participant — Team Leader (Technophile) | Engineering Model Competition | 2025 |
-
----
+| DCAP (Pursuing) | IICS Gokulpuri | 2025-26 |
+| EMC 2025 Team Leader | Engineering Model Competition | 2025 |
 
 ## Projects
 
-### 1. Portable Automatic Washing Machine (INSPIRE MANAK Project)
-- Built in Class 9 as a solo project
-- Uses centrifugal force, DC motor, submersible pump, manual switches
-- Selected for INSPIRE MANAK Award by Government of India
-- Demonstrated at District/State Level Exhibition, GNCT Delhi
+### 1. Portable Automatic Washing Machine
+A functional electromechanical model built as a school-level innovation project using a wooden base, submersible pump, electric motor, pulsator, switches, and power conversion components.
 
-### 2. Germicidal Automatic Washing Machine (EMC 2025 — Team Technophile)
-- Upgraded version with UV-C germicidal irradiation technology
-- Kills bacteria and pathogens using UV-C light (180–280nm wavelength)
-- Team Leader of 6-member team
-- [Demo Video](https://youtu.be/apj1r8xiHvs?si=N8CtK7KsnbEYNQwL)
+**Highlights**
+- Solo build in Class 10
+- Selected for INSPIRE MANAK Award
+- Demonstrated practical understanding of motors, pumping, rotation, and system assembly
 
----
+### 2. Germicidal Automatic Washing Machine
+An enhanced team version of the earlier model presented in EMC 2025, incorporating a sanitization-oriented concept and improved system structure.
 
-## Programming Skills
+**My Role**
+- Team Leader
+- Guided design coordination and presentation
+- Worked on project explanation, structure, and implementation
 
-- **C** — Ciphers, logic programs, data structures
-- **C++** — OOP concepts, algorithms
-- Currently learning: Networking fundamentals, OS concepts (DCAP)
+**Demo Video**  
+[Watch here](https://youtu.be/apj1r8xiHvs?si=N8CtK7KsnbEYNQwL)
 
----
+### 3. Caesar Cipher in C
+A beginner cryptography project written in C that performs encryption and decryption using the Caesar cipher.
 
-## Cybersecurity Interest Areas
+**Concepts Used**
+- Character handling
+- Modular arithmetic
+- Symmetric encryption basics
+- Uppercase/lowercase preservation
 
-- Cryptography and cipher systems
-- Network security fundamentals
-- Ethical hacking concepts
-- Secure system design
-- National digital infrastructure protection
+## Skills
 
----
+### Programming
+- C
+- C++
+- HTML
+- CSS
 
-## Contact
+### Computer Science Fundamentals
+- Basic cryptography
+- Networking fundamentals
+- Operating system concepts
+- Command-line program structure
 
-- Email: thetechnophile2023@gmail.com
-- GitHub: github.com/[your-username]
+### Hardware and Practical Engineering
+- Circuit assembly
+- Motor and pump integration
+- Electromechanical prototyping
+- Project presentation
+
+## Links
+
+- **GitHub:** [github.com](https://github.com/krishnaaggarwal-Cybersecurity)
+- **Project Demo:** [youtu.be](https://youtu.be/apj1r8xiHvs?si=N8CtK7KsnbEYNQwL)
+- **Email:** mailto:thetechnophile2023@gmail.com
+
+## Purpose of This Portfolio
+
+This portfolio documents my transition from **school-level engineering projects** to **foundational cybersecurity learning**. I am building it as evidence of curiosity, discipline, and readiness to grow in secure computing and cyber defence.
