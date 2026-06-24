@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Krishna Aggarwal | Cybersecurity Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: #0a0e17;
+      color: #c9d1d9;
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+      border-bottom: 2px solid #00ff88;
+      padding: 60px 40px 40px;
+      text-align: center;
+    }
+
+    .terminal-tag {
+      color: #00ff88;
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    header h1 span { color: #00ff88; }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #8b949e;
+      font-family: Arial, sans-serif;
+    }
+
+    .inspire-badge {
+      display: inline-block;
+      margin-top: 20px;
+      background: linear-gradient(90deg, #1a3a2a, #0f2d1e);
+      border: 1px solid #00ff88;
+      color: #00ff88;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 16px;
+      background: #161b22;
+      border-bottom: 1px solid #21262d;
+    }
+
+    .nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      transition: color 0.2s;
+    }
+    .nav a:hover { color: #00ff88; }
+
+    /* SECTIONS */
+    section {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      color: #00ff88;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      margin-bottom: 28px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #21262d;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .about-card {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-left: 3px solid #00ff88;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .about-card h3 {
+      font-size: 14px;
+      color: #00ff88;
+      font-family: Arial, sans-serif;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .about-card p {
+      font-size: 14px;
+      color: #8b949e;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ACHIEVEMENTS */
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .achievement-card {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-top: 3px solid #00ff88;
+      padding: 24px 20px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .achievement-card .icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .achievement-card .title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .achievement-card .body {
+      font-size: 13px;
+      color: #8b949e;
+      font-family: Arial, sans-serif;
+    }
+
+    .achievement-card .year {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #00ff88;
+      font-family: Arial, sans-serif;
+    }
+
+    /* PROJECTS */
+    .project-card {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #00ff88, #58a6ff);
+    }
+
+    .project-card h3 {
+      font-size: 20px;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .project-card .subtitle {
+      font-size: 13px;
+      color: #00ff88;
+      font-family: Arial, sans-serif;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: #8b949e;
+      font-family: Arial, sans-serif;
+      margin-bottom: 14px;
+    }
+
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+
+    .tag {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      color: #58a6ff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+    }
+
+    .project-link {
+      display: inline-block;
+      color: #00ff88;
+      text-decoration: none;
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      border: 1px solid #00ff88;
+      padding: 6px 16px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .project-link:hover { background: #0f2d1e; }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .skill-card {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 20px;
+    }
+
+    .skill-card h3 {
+      font-size: 14px;
+      color: #58a6ff;
+      font-family: Arial, sans-serif;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .skill-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .skill-name {
+      font-size: 13px;
+      color: #c9d1d9;
+      font-family: Arial, sans-serif;
+    }
+
+    .skill-bar {
+      width: 120px;
+      height: 6px;
+      background: #21262d;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00ff88, #58a6ff);
+      border-radius: 3px;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 8px;
+      padding: 36px;
+      text-align: center;
+    }
+
+    .contact-box p {
+      color: #8b949e;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .contact-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+    .contact-link {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .contact-link:hover { opacity: 0.8; }
+    .contact-link.primary { background: #00ff88; color: #0a0e17; font-weight: 700; }
+    .contact-link.secondary { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #484f58;
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      border-top: 1px solid #21262d;
+      margin-top: 60px;
+    }
+
+    footer span { color: #00ff88; }
+
+    @media (max-width: 700px) {
+      .about-grid, .achievement-grid, .skills-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="terminal-tag">&gt; LOADING PROFILE...</div>
+  <h1>Krishna <span>Aggarwal</span></h1>
+  <p class="tagline">Class 12 | Sarvodaya Bal Vidyalaya, Ghaziabad | IIT Kanpur B.Cyber Applicant</p>
+  <div class="inspire-badge">🏆 INSPIRE MANAK Awardee 2023 — DST, Govt. of India</div>
+</header>
+
+<nav class="nav">
+  <a href="#about">About</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-title">&gt; whoami</div>
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>WHO I AM</h3>
+      <p>A Class 12 student from Ghaziabad with a demonstrated passion for engineering, applied science, and cybersecurity. I build things — from physical electromechanical models to C programs that implement encryption logic.</p>
+    </div>
+    <div class="about-card">
+      <h3>WHY CYBERSECURITY</h3>
+      <p>Future conflicts will be fought in cyberspace. I want to be part of India's defence against digital threats — building secure systems, finding vulnerabilities, and protecting national infrastructure.</p>
+    </div>
+    <div class="about-card">
+      <h3>INSPIRE MANAK</h3>
+      <p>In Class 9, I built a Portable Automatic Washing Machine selected by the Department of Science & Technology, Govt. of India, for the INSPIRE MANAK Award — ₹10,000 cash prize. Later exhibited at State Level.</p>
+    </div>
+    <div class="about-card">
+      <h3>TECHNICAL FOUNDATION</h3>
+      <p>Certified in C and C++ (Grade A). Pursuing DCAP from IICS Gokulpuri covering networking, OS concepts. Know HTML and CSS. Led 6-member team at EMC 2025 competition.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-title">&gt; ls ./achievements</div>
+  <h2>Achievements & Certifications</h2>
+  <div class="achievement-grid">
+    <div class="achievement-card">
+      <div class="icon">🏆</div>
+      <div class="title">INSPIRE MANAK Award</div>
+      <div class="body">₹10,000 cash prize from Department of Science & Technology, Government of India</div>
+      <div class="year">2023</div>
+    </div>
+    <div class="achievement-card">
+      <div class="icon">🔬</div>
+      <div class="title">State Level Exhibition</div>
+      <div class="body">District/State Level Science Exhibition — GNCT Delhi, Directorate of Education</div>
+      <div class="year">2024</div>
+    </div>
+    <div class="achievement-card">
+      <div class="icon">💻</div>
+      <div class="title">C & C++ Certificate</div>
+      <div class="body">Grade A — ICE Computer Education, Sahibabad, Ghaziabad</div>
+      <div class="year">2024</div>
+    </div>
+    <div class="achievement-card">
+      <div class="icon">📡</div>
+      <div class="title">DCAP — Pursuing</div>
+      <div class="body">Diploma in Computer Applications — IICS Gokulpuri. Networking, OS, Applications.</div>
+      <div class="year">2025–26</div>
+    </div>
+    <div class="achievement-card">
+      <div class="icon">⚙️</div>
+      <div class="title">EMC 2025 — Team Leader</div>
+      <div class="body">Led Team Technophile at Engineering Model Competition 2025</div>
+      <div class="year">2025</div>
+    </div>
+    <div class="achievement-card">
+      <div class="icon">🌐</div>
+      <div class="title">HTML & CSS</div>
+      <div class="body">Full proficiency in frontend web development — self-taught</div>
+      <div class="year">2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-title">&gt; ls ./projects</div>
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Germicidal Automatic Washing Machine</h3>
+    <div class="subtitle">EMC 2025 — TEAM TECHNOPHILE (LEADER)</div>
+    <p>Enhanced version of the INSPIRE project. Integrated UV-C germicidal irradiation (180–280nm wavelength) to kill bacteria and pathogens. Used centrifugal force, DC motor control, submersible pump, and toggle switches. Led a 6-member team. Demonstrates applied physics, motor control, and embedded systems thinking relevant to IoT security.</p>
+    <div class="tag-row">
+      <span class="tag">UV-C Irradiation</span>
+      <span class="tag">DC Motor Control</span>
+      <span class="tag">Centrifugal Mechanics</span>
+      <span class="tag">Team Leadership</span>
+    </div>
+    <a href="https://youtu.be/apj1r8xiHvs?si=N8CtK7KsnbEYNQwL" target="_blank" class="project-link">▶ Watch Demo</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Portable Automatic Washing Machine</h3>
+    <div class="subtitle">INSPIRE MANAK AWARD PROJECT — CLASS 9 SOLO BUILD</div>
+    <p>Built as a Class 9 student — a fully functional portable washing machine using a wooden board, submersible pump, electric motor, DC-to-AC converter, and pulsator. Selected by the DST Govt. of India for the INSPIRE MANAK Award and exhibited at District/State Level under GNCT Delhi Science Branch. Demonstrates hardware thinking, motor mechanics, and self-driven engineering at an early age.</p>
+    <div class="tag-row">
+      <span class="tag">Electromechanical</span>
+      <span class="tag">DC/AC Conversion</span>
+      <span class="tag">Govt. of India Award</span>
+      <span class="tag">Solo Build</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>Caesar Cipher — Encryption / Decryption Tool</h3>
+    <div class="subtitle">C PROGRAM — CRYPTOGRAPHY FUNDAMENTALS</div>
+    <p>A command-line Caesar Cipher encoder and decoder written in C. Implements symmetric key encryption — the conceptual foundation of modern cryptography. Handles both uppercase and lowercase characters, preserving non-alphabetic characters. Demonstrates understanding of key-based encryption, modular arithmetic, and character-level data manipulation.</p>
+    <div class="tag-row">
+      <span class="tag">C Language</span>
+      <span class="tag">Symmetric Encryption</span>
+      <span class="tag">Cryptography</span>
+      <span class="tag">CLI Tool</span>
+    </div>
+    <a href="https://github.com/krishnaaggarwal-Cybersecurity/cybersecurity-portfolio/blob/main/caesar_cipher.c" target="_blank" class="project-link">View Code</a>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-title">&gt; cat skills.txt</div>
+  <h2>Skills & Knowledge</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>PROGRAMMING</h3>
+      <div class="skill-item">
+        <span class="skill-name">C Language</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">C++</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">HTML & CSS</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>CYBERSECURITY CONCEPTS</h3>
+      <div class="skill-item">
+        <span class="skill-name">Cryptography Basics</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">Networking Fundamentals</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">OS Concepts (Linux/Windows)</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>HARDWARE & MAKING</h3>
+      <div class="skill-item">
+        <span class="skill-name">Circuit Building</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">Motor & Pump Systems</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">DC/AC Conversion</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>SOFT SKILLS</h3>
+      <div class="skill-item">
+        <span class="skill-name">Team Leadership</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">Technical Presentation</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-name">Self-Driven Learning</span>
+        <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-title">&gt; ./contact.sh</div>
+  <h2>Contact</h2>
+  <div class="contact-box">
+    <p>Applying for IIT Kanpur B.Cybersecurity Program 2026. INSPIRE MANAK Awardee. Ready to build, break, and secure systems.</p>
+    <div class="contact-links">
+      <a href="mailto:thetechnophile2023@gmail.com" class="contact-link primary">📧 Email Me</a>
+      <a href="https://github.com/krishnaaggarwal-Cybersecurity" target="_blank" class="contact-link secondary">GitHub Profile</a>
+      <a href="https://youtu.be/apj1r8xiHvs?si=N8CtK7KsnbEYNQwL" target="_blank" class="contact-link secondary">▶ Project Demo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Krishna Aggarwal &mdash; <span>INSPIRE MANAK Awardee</span> &mdash; IIT Kanpur B.Cyber Applicant 2026</p>
+  <p style="margin-top:8px;">Ghaziabad, Uttar Pradesh, India</p>
+</footer>
+
+</body>
+</html>
